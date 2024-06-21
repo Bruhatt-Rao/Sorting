@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Sorting</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="utils.js"></script>
+  <script src=" script.js"></script>
+</head>
+
+<body onload="startGame()">
+  <div id="parent">
+    <div id="display">
+      
+    </div>
+    <div class="selections">
+      <h2 id="status">Status: </h2>
+      <div class="slidecontainer">
+        <p>Size:</p>
+        <input type="range" min="2" max="20" value="4" class="slider" id="Size">
+      </div>
+      <div class="dropdown">
+        <button onclick="dropdown()" class="dropbtn">Choose Algorithm</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a onclick="switch_sort(0)">Bubble Sort</a>
+          <a onclick="switch_sort(1)">Insertion Sort</a>
+          <a onclick="switch_sort(2)">Selection Sort</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

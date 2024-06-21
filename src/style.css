@@ -1,0 +1,120 @@
+html, body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #222e46;
+}
+
+#parent {
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  font-family: monospace;
+  height: 100vh;
+  align-items: center;
+}
+
+p {
+  color: #f66c91;
+}
+
+.slidecontainer {
+  font-size: 20px;
+  width: 500px;
+}
+
+.slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 500px;
+  height: 25px;
+  background: #222e46;
+  opacity: 1;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+  border: solid;
+  border-color: #f66c91;
+}
+
+.slider:hover {
+  opacity: 0.7;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #f66c91;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #f66c91;
+  cursor: pointer;
+}
+
+.dropbtn {
+  background-color: #222e46;
+  height: 25px;
+  cursor: pointer;
+  color: #f66c91;
+  border: 0px;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+  opacity: 0.7;
+}
+
+.dropdown {
+  font-family: monospace;
+  font-size: 20px;
+  position: relative;
+  display: inline-block;
+  border: solid;
+  border-color: #f66c91;
+  margin: 2px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #222e46;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  background-color: #222e46;
+  color: #f66c91;
+}
+
+.dropdown a:hover {
+  opacity: 0.7;
+}
+
+h2 {
+  color: #f66c91;
+}
+
+@media (max-width: 800px) {
+  #parent {
+    flex-direction: column;
+    height: 80vh;
+    width: 95vw;
+  }
+  .slidecontainer {
+    width: 80vw;
+  }
+  .slider {
+    width: 80vw;
+  }
+}
